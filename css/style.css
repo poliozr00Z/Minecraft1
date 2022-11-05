@@ -281,6 +281,7 @@ width: 14px;
   border-radius: 4.6px;
  
 }
-.cursor {
-  color: black;
+.facebook {
+  text-decoration:none;
+  text-align: center;
 }
