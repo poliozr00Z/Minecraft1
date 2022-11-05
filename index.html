@@ -129,7 +129,7 @@
         <footer>
              <p>Email:abesadzezura12@gmail.com</p>
             <p>Telephone:5555555</p>
-            <p class="facebook"> <a href="https://m.me./zura.abesadze.79">  created by Zura Abesadze </a></p> 
+            <p class="facebook"> <a href="https://www.facebook.com/zura.abesadze.79">  created by Zura Abesadze </a></p> 
         </footer>
         <script>
             let slideIndex = 1;
@@ -158,6 +158,26 @@
               slides[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += " active";
             }
+            </script>
+            <script> 
+            window.addEventListener("mousemove", function (e) {
+	var to_append = document.getElementsByClassName('loader-container')[0];
+	var all = document.getElementsByClassName('loader-container');
+
+	var parent_div = document.createElement('div');
+	parent_div.className = "loader-container";
+	var inner_div = document.createElement('div');
+	inner_div.className = "loader";
+	parent_div.appendChild(inner_div)
+	var d = document.body.appendChild(parent_div);
+
+	parent_div.style.left = (e.clientX - 50)+'px';
+	parent_div.style.top = (e.clientY - 50)+'px';
+
+	if(document.getElementsByClassName('loader-container').length > 50) {
+		document.body.removeChild(to_append)
+	}
+});
             </script>
     </body>
 </html>
